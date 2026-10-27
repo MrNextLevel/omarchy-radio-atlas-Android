@@ -1,4 +1,5 @@
 import QtQuick
+import qs.Commons as Commons
 import QtQuick.Controls as QQC
 import Quickshell
 import Quickshell.Hyprland
@@ -102,11 +103,11 @@ Item {
   readonly property bool lightTheme:
     0.2126 * background.r + 0.7152 * background.g + 0.0722 * background.b > 0.5
 
-  property color background: Color.menu.background
-  property color foreground: Color.menu.text
-  property color border: Color.menu.border
-  property color accent: Color.accent
-  property color urgent: Color.urgent
+  property color background: Commons.Color.menu.background
+  property color foreground: Commons.Color.menu.text
+  property color border: Commons.Color.menu.border
+  property color accent: Commons.Color.accent
+  property color urgent: Commons.Color.urgent
   property color dim: Qt.rgba(foreground.r, foreground.g, foreground.b, 0.56)
   property color faint: Qt.rgba(foreground.r, foreground.g, foreground.b, 0.12)
   property color favoriteColor: lightTheme ? "#8a6100" : "#f2c94c"
